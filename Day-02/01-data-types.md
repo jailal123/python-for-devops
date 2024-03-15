@@ -9,7 +9,7 @@ dynamic type programming language.
 
 2. **Sequence Types:**
    - **str**: Represents strings (sequences of characters). Example: `text = "Hello, World"`
-   - **list**: Represents lists (ordered, mutable sequences). Example: `my_list = [1, 2, 3]`
+   - **list**: Represents lists (ordered, mutable sequences). Example: `my_list = [1, 2, 3]` by default number are understand but for string ""
    - **tuple**: Represents tuples (ordered, immutable sequences). Example: `my_tuple = (1, 2, 3)`
 
 3. **Mapping Type:**
