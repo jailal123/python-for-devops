@@ -115,3 +115,5 @@ source myenv/bin/activate
 ```
 
 Once activated, you work in an isolated workspace with its Python interpreter and library dependencies.
+![image](https://github.com/jailal123/python-for-devops/assets/155892573/c4c48e98-5024-42cf-a13f-56d89fa3908a)
+
