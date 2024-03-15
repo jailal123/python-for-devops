@@ -1,0 +1,11 @@
+calculator code
+a=54
+>>> b=54
+>>> add=a+b
+>>> print ('addition:'+" " + str(add))
+addition is string . and string can be attached with string so convert number to string [str(add)]
+addition: 108
+
+
+
+def sub():  
