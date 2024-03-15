@@ -11,7 +11,7 @@ A function in Python is a block of code that performs a specific task. Functions
 ```python
 def greet(name):
     return f"Hello, {name}!"
-
+#backspace to end the particular function.
 message = greet("Alice")
 print(message)
 ```
@@ -20,7 +20,7 @@ In this example, `greet` is a function that takes a `name` argument and returns 
 
 ### Modules
 
-A module is a Python script containing Python code. It can define functions, classes, and variables that can be used in other Python scripts. Modules help organize and modularize your code, making it more maintainable.
+A module is a Python script containing Python code( group of functions). It can define functions, classes, and variables that can be used in other Python scripts. Modules help organize and modularize your code, making it more maintainable.
 
 **Example:**
 
