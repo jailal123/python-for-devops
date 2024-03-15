@@ -33,7 +33,10 @@ def square(x):
 
 pi = 3.14159265
 ```
-
+def addition(num1,num2):
+    x=num1+num2
+    return return x
+print (x(5,10))
 You can use this module in another script:
 
 ```python
