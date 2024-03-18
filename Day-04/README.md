@@ -129,7 +129,8 @@ Once activated, you work in an isolated workspace with its Python interpreter an
 
 python -m venv project-abc (to create a project name abc)
 
-.\myenv\Scripts\Activate
+**.\myenv\Scripts\Activate** some time not required
+
 
 .\project-abc\Scripts\Activate
 
