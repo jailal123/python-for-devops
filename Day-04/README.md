@@ -11,6 +11,9 @@ A function in Python is a block of code that performs a specific task. Functions
 ```python
 def greet(name):
     return f"Hello, {name}!"
+
+
+**** return means the execution of funtion is called off"********
 #backspace to end the particular function.
 message = greet("Alice")
 print(message)
