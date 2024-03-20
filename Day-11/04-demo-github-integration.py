@@ -25,9 +25,31 @@ if response.status_code == 200:
         else:
             pr_creators[creator] = 1
 
+
+###### details of "f"#########################
+
+    Yes, you're correct. Thank you for elaborating on the concept of f-strings.
+
+To add more detail, f-strings provide a convenient and readable way to create strings with embedded expressions or variables. 
+By prefixing a string with f or F, Python understands that it's an f-string, allowing you to directly embed Python expressions 
+or variables within curly braces {} within the string.
+
+For example:
+
+python
+Copy code
+name = "Alice"
+age = 30
+print(f"My name is {name} and I am {age} years old.")
+In this example, {name} and {age} are placeholders within the string that are replaced with the values of the variables name and 
+age respectively when the string is formatted. This makes it easy to construct strings dynamically based on variable values.
+
     # Display the dictionary of PR creators and their counts
     print("PR Creators and Counts:")
     for creator, count in pr_creators.items():
         print(f"{creator}: {count} PR(s)")
 else:
     print(f"Failed to fetch data. Status code: {response.status_code}")
+
+
+
