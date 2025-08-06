@@ -3,14 +3,14 @@
 In Python, a variable is a named storage location used to store data. Variables are essential for programming as they allow us to work with data, manipulate it, and make our code more flexible and reusable. 
 
 #### Example:
-
-```python
+print "jailal" is static code 
+```python dyanmic language python 
 # Assigning a value to a variable
 my_variable = 42
 
 # Accessing the value of a variable
 print(my_variable)  # Output: 42
-```
+``` this is dyanmic language python
 
 ### Variable Scope and Lifetime:
 
