@@ -14,6 +14,7 @@ Arithmetic operators in Python allow you to perform basic mathematical calculati
 6. **Modulus (%):** Returns the remainder of the division of the left operand by the right operand.
 7. **Exponentiation (**):** Raises the left operand to the power of the right operand.
 
+print(5 ** 2)     # Output: 25
 ## Examples
 
 ### Addition
