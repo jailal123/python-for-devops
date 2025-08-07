@@ -1,6 +1,10 @@
 Great — you're diving into **command-line arguments**, **environment variables**, and **AWS CLI usage** — all important for scripting and secure automation. Let’s break this down clearly.
 
 ---
+<img width="903" height="636" alt="image" src="https://github.com/user-attachments/assets/cafa24c4-6259-4b24-8e3a-951ece6ba9cc" />
+
+
+
 
 ## ✅ 1. **Command Line Arguments in Python (with `sys.argv`)**
 
@@ -42,6 +46,13 @@ Integer addition: 12
 Use `os.environ` or `os.getenv()` to **read environment variables** like tokens, keys, passwords.
 
 ### ✅ Example:
+
+
+#Export apitoken=465sdkjadg
+#Import os
+#token = os.getenv("apitoken ")  
+#print("My API Token:", token)
+
 
 ```python
 # filename: secure_script.py
@@ -112,4 +123,5 @@ aws s3 ls
 | `export VAR=value` | Set env var in Linux/Mac                 |
 | `set VAR=value`    | Set env var in Windows CMD               |
 | `$env:VAR="value"` | Set env var in PowerShell                |
+
 
