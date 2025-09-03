@@ -31,6 +31,9 @@ You can also split by **comma**:
 data_list = data.split(",")
 ```
 
+
+
+
 ---
 
 ### ✅ **2. `os` Module to Talk to the Operating System**
@@ -141,5 +144,104 @@ except PermissionError:
 except FileNotFoundError:
     print("Folder not found!")
 except Exception as e:
+
+
+
+
+Let's break this into clear parts and address everything step by step:
+
+---
+
+### ✅ **1. `print(flask[2][type])` meaning**
+
+This looks like **Python indexing and key access**.
+
+* `flask[2]` → means take the **third element** from the `flask` list (index starts at 0).
+* `[type]` → if that element is a dictionary, it tries to get the value of the key `type`.
+
+Example:
+
+```python
+flask = [
+    {"name": "Flask", "type": "Framework"},
+    {"name": "Django", "type": "Framework"},
+    {"name": "FastAPI", "type": "Framework"}
+]
+
+print(flask[2]["type"])  # Output: Framework
+```
+
+---
+
+### ✅ **2. Python to GitHub API or CLI using script**
+
+There are **two main ways**:
+
+* **Using GitHub CLI (`gh`)** – commands like `gh repo clone`, `gh pr create`.
+* **Using GitHub API + Python `requests` module**.
+
+---
+
+#### **Using GitHub API with Python (`requests`)**
+
+**Example: Create a Pull Request**
+
+```python
+import requests
+import json
+
+# GitHub token (use Personal Access Token)
+TOKEN = "your_github_token"
+REPO = "username/repository"
+API_URL = f"https://api.github.com/repos/{REPO}/pulls"
+
+headers = {
+    "Authorization": f"token {TOKEN}",
+    "Accept": "application/vnd.github.v3+json"
+}
+
+data = {
+    "title": "My Pull Request",
+    "head": "feature-branch",  # source branch
+    "base": "main",            # target branch
+    "body": "This is an automated PR"
+}
+
+response = requests.post(API_URL, headers=headers, data=json.dumps(data))
+print(response.status_code)
+print(response.json())  # JSON to dictionary
+```
+
+---
+
+### ✅ **3. JSON to Dictionary in Python**
+
+If you have a JSON string:
+
+```python
+import json
+
+json_str = '{"name": "Flask", "type": "Framework"}'
+dict_obj = json.loads(json_str)
+print(dict_obj)         # {'name': 'Flask', 'type': 'Framework'}
+print(dict_obj['type']) # Framework
+```
+
+---
+
+### ✅ **4. Basic Python Data Structures**
+
+* **Set** → `my_set = {1, 2, 3}`
+* **List** → `my_list = [1, 2, 3]`
+* **Tuple** → `my_tuple = (1, 2, 3)`
+
+**Difference:**
+
+* `[]` list → mutable (can change)
+* `()` tuple → immutable (cannot change)
+* `{}` set → unordered, unique elements
+
+
+
     print("Unexpected error:", e)
 ```
